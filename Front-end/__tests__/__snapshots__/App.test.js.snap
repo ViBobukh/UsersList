@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App test App render 1`] = `
+<div>
+  <input
+    name="name"
+    onChange={[Function]}
+    placeholder="Name searching"
+    value=""
+  />
+  <input
+    name="email"
+    onChange={[Function]}
+    placeholder="Email searching"
+    value=""
+  />
+  <ul>
+    <li>
+      <div
+        className="user"
+        onClick={[Function]}
+      >
+        <div
+          className=""
+        >
+          Maks
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="user"
+        onClick={[Function]}
+      >
+        <div
+          className=""
+        >
+          Mark
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="user"
+        onClick={[Function]}
+      >
+        <div
+          className=""
+        >
+          Mario
+        </div>
+      </div>
+    </li>
+    <li>
+      <div
+        className="user"
+        onClick={[Function]}
+      >
+        <div
+          className=""
+        >
+          Patrick
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

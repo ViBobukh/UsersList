@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User tests Render user 1`] = `
+<div
+  className="user"
+  onClick={[Function]}
+>
+  <div
+    className=""
+  >
+    Maks
+  </div>
+</div>
+`;

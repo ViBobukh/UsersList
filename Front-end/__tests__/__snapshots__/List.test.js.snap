@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List tests Render list 1`] = `
+<ul>
+  <li>
+    <div
+      className="user"
+      onClick={[Function]}
+    >
+      <div
+        className=""
+      >
+        Maks
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      className="user"
+      onClick={[Function]}
+    >
+      <div
+        className=""
+      >
+        Mark
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      className="user"
+      onClick={[Function]}
+    >
+      <div
+        className=""
+      >
+        Mario
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      className="user"
+      onClick={[Function]}
+    >
+      <div
+        className=""
+      >
+        Patrick
+      </div>
+    </div>
+  </li>
+</ul>
+`;
