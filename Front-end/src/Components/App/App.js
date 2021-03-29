@@ -1,18 +1,25 @@
-import React, { useCallback, useMemo, useState } from "react";
-import { users } from "../../lib/hardCode";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import "./App.css";
 import List from "../List/List";
 import { filter } from "../../lib/filter";
+import { getUsers } from "../../lib/getUsers";
 
 /**
  * Main components with input and filter
  * @returns {JSX.Element}
  */
 function App() {
-  const [allUsers, setUsers] = useState(users);
+  const [allUsers, setUsers] = useState([]);
   const [titleName, setTitleName] = useState("");
   const [titleEmail, setTitleEmail] = useState("");
   const [currentInput, setCurrentInput] = useState("");
+
+  /**
+   * Get all users from JSON
+   */
+  useEffect(() => {
+    getUsers().then((res) => setUsers(res));
+  }, []);
 
   /**
    * Callback for setting title by text of input

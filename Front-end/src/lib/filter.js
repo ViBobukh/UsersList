@@ -6,7 +6,7 @@
  * @returns {array}
  */
 export function filter(arr, searchString, filterType) {
-  const users = getUsers(arr);
+  const users = getFlatArrayWithUsers(arr);
   const words = searchString.split();
   return users.filter((user) => {
     return words.every((word) => {
@@ -24,10 +24,12 @@ export function filter(arr, searchString, filterType) {
  * @param arr {array}
  * @returns {array}
  */
-export function getUsers(arr) {
+function getFlatArrayWithUsers(arr) {
   const newArr = arr.map((users) => {
     const { items, ...user } = users;
-    return items && items.length ? [user, ...getUsers(items)] : [user];
+    return items && items.length
+      ? [user, ...getFlatArrayWithUsers(items)]
+      : [user];
   });
   return newArr.flat(1);
 }
